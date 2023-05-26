@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <title>Unidad 2 </title>
+        <body bgcolor="cc0000">
+        <marquee direccion="left"> <font face="arial blach" size="25" color="black">
+        Arquitectura De Computadoras </font></marquee>
+        <hr>
+  
+         <header class="unidades">
+        <font face="arial blach" size="25" color="black">
+        <p> <font class="subtitulo"> <a href="adc.html">Unidad 1</a> &nbsp; &nbsp; <a href="adc2.html">Unidad 2</a>  &nbsp; &nbsp; <a href="adc3.html">Unidad 3</a>  &nbsp; 
+        &nbsp;  <a href="adc4.html">Unidad 4 </a>  &nbsp;  <a href="Practicas.html"> Practicas</a> &nbsp;</a></font> </p>
+        </header>
+
+        <section>
+        <nav>
+        <ul>
+
+        <body>
+        <body bgcolor="cc0000">
+        <font face="arial blach" size="4" color="black">
+        <a href="#2.1"><li>2.1 Organización del Procesador </li></a>
+                <a href="#2.2"><li>2.2 Estructuras de Registros</li></a>
+                <ul>
+                    <a href="#2.2.1"><li class="indt">2.2.1 Registros Visibles Para el Usuario</li></a>
+                    <a href="#2.2.2"><li class="indt">2.2.2 Registros de Control y de Estados</li></a>
+                </ul>
+                <a href="#2.3"><li>2.3 El Ciclón de Instrucciones</li></a>
+                <ul>
+                    <a href="#2.3.1"><li class="indt">2.3.1 Ciclo Fetch-Decode-Execute</li></a>
+                    <a href="#2.3.2"><li class="indt">2.3.2 Segmentación de Instrucciones</li></a>
+                    <a href="#2.3.3"><li class="indt">2.3.3 Conjunto de Instrucciones</li></a>
+                </ul>
+                <h1><a href="#2.4"><li> 2.4 Modos de Direccionamiento </li></a></h1>
+                </ul>
+            </ul>
+        </nav>
+
+        <article>
+            <font class="title"> <center> Unidad 2  </center></font>
+            <p> <br> </p>
+
+            <h2 id="2.1">2.1 Organización del Procesador</h2> <hr>
+            <p class="text">La función principal de un procesador es ejecutar instrucciones y la organización que tiene viene condicionada por las tareas que debe
+            realizar y por cómo debe hacerlo. Los procesadores están diseñados y operan según una señal de sincronización.<p><br></p>
+            <p class="text">Esta señal, conocida como señal de reloj, es una señal en forma de onda cuadrada periódica con una determinada frecuencia. Todas las operaciones hechas 
+            por el procesador las gobierna esta señal de reloj: un ciclo de reloj determina la unidad básica de tiempo, es decir, la duración mínima de una operación del procesador.
+            <p><br></p>
+            <p class="text">Es una señal que sincroniza la comunicación de control y datos entre los componentes de la tarjeta madre y el micro procesador se podría decir que es
+            como una cadena de pulso constante en donde la línea baja tiene un valor de 0 y la línea alta de 1, entre más pulsos o su frecuencia sea mayor mas instrucciones por 
+            segundo realizara o ejecutara.<p><br></p>
+            <p align="center"><img src="https://0901.static.prezi.com/preview/v2/ley2tvplyqic3xcsvltnh3i7th6jc3sachvcdoaizecfr3dnitcq_3_0.png"><br></p> 
+  
+            <h2 id="2.2">2.2 Estructuras de Registros</h2> <hr>
+            <h4> <i> Registros del CPU </i> </h4>
+            <p class="text">Un computador emplea una jerarquía de memoria: <ul class="indt"><li>Registros visibles por el usuario: permiten al programador de lenguaje máquina o 
+            de ensamblador minimizar las referencias a memoria principal por medio de la optimización del uso de registros.</li><li>Registros de control y de estado: son utilizados por 
+            la unidad de control para controlar el funcionamiento del procesador y por programas privilegiados del sistema operativo para controlar la ejecución de programas.
+            </li><p><br></p>
+            <p class="text">No hay una separación bien definida de registros dentro de estas dos categorías. Por ejemplo, en algunas máquinas el contador de programa es visible por 
+            el usuario (por ejemplo, en el Pentium), pero en muchas no lo es.<p><br></p>
+         
+            <h1 id="2.2.1">2.2.1 Registros Visibles Para el Usuario</h1><hr>
+            <p class="text">A continuación, veremos cómo se utilizan estos registros en la programación de computadoras y cómo pueden ser utilizados para mejorar la eficiencia y 
+            velocidad del procesamiento de datos. En general, el conocimiento de los registros visibles para el usuario es esencial para entender cómo funciona una computadora y cómo 
+            se puede programar para realizar tareas específicas.<p><br></p>
+            <p class="text"><b>los registros visbles para el usuario Son aquellos que el programador o usuario puede acceder directamente, es decir, pueden ser referenciados en el 
+            código de programación. Estos registros son importantes porque proporcionan una forma rápida y eficiente de acceder a los datos y las instrucciones de programación 
+            en la CPU.<p><br></p>
+            <p class="text">Estos registros se dividen en 3 tipos:<ul class="indt"><li>REGISTROS DE DATOS: Estos registros se utilizan para almacenar datos. En la mayoría de 
+            las arquitecturas de computadoras modernas, los registros de datos son de tamaño fijo, lo que significa que pueden almacenar una cantidad fija de bits (por ejemplo, 32 bits 
+            o 64 bits).</li><li>REGISTROS DE DIRECCIÓN: Se utilizan para almacenar direcciones de memoria. La memoria se puede considerar como una gran cantidad de cajas o casilleros, 
+            y cada una de estas cajas o casilleros tiene una dirección única. Cuando un programa necesita acceder a un dato o instrucción de programación en la memoria, utiliza un 
+            registro de dirección para especificar la dirección en la que se encuentra el dato o la instrucción.</li><li>REGISTROS DE ESTADO: Se utilizan para indicar el estado actual de
+            la CPU. Por ejemplo, pueden indicar si se ha producido una interrupción, si se ha producido un error o si se ha completado una operación. Algunos ejemplos de registros 
+            de estado comunes son los registros de banderas y los registros de estado de interrupción.</li><p><br></p>
+         
+            <h2 id="2.2.2">2.2.2 Registros de Control y de Estados</h2><hr>
+            <h4> <i> Registros de control </i> </h4>
+            <p class="text">Se conoce como registro de estado a los registros de memoria en los que se deja constancia de algunas condiciones que se dieron en la última operación 
+            realizada y que podrán ser tenidas en cuenta en operaciones posteriores. Por ejemplo, en el caso de hacer una resta, en el registro de estado queda constancia de si 
+            el resultado fue cero, positivo o negativo, o si se sobrepasó la capacidad de representación.<p><br></p>
+            <p class="text">Son utilizados por la unidad de control para controlar el funcionamiento del procesador y por programas privilegiados del sistema operativo para controlar 
+            la ejecución de programas. Hay diversos registros del procesador que se emplean para controlar su funcionamiento.<p><br></p>
+            <p class="text">Cada modelo de procesador tiene sus propios registros de estados, pero los más comunes son:<ul class="indt"><li>Z = Zero flag: El resultado es cero.</li>
+            <li>S = Sign flag: El resultado es negativo.</li><li>V = Overflow flag: El resultado supera el número de bits que puede manejar la ALU.</li><li>P = Parity flag: Paridad del 
+            número de 1 en los datos.</li><p><br></p>
+
+            <h2 id="2.2.3">2.2.3 Conjunto de Instrucciones</h2> <hr>
+            <p class="text">Caracteristicas Generales:<ul class="indt"><li>El conjunto de instrucciones de un computador debe ser completo en el sentido de que se pueda construir 
+            un programa para evaluar una función computable usando una cantidad de memoria razonable y empleando un tiempo moderado, es decir, el número de instrucciones de ese programa 
+            no debe ser demasiado elevado.</liLos juegos de instrucciones también tienen que ser eficientes, esto significa que las funciones más necesarias deben poder realizarse   
+            usando pocas instrucciones.><li>El conjunto de instrucciones de una máquina debe ser regular, es decir debe ser simétrico (por ejemplo, si existe una instrucción 
+            de desplazamiento a la izquierda, debe haber otra de desplazamiento a la derecha, etc.) y ortogonal, es decir, deben poder combinarse, en la medida de lo posible, todos 
+            las operaciones con todos los tipos de datos y modos de direccionamiento.</li><p><br></p>
+            <p class="text">Instruccion De Suma ADD<br>Suma los operandos que se le dan y guarda el resultado en el primer operando. Suma el registro acumulador "A" con 
+            el registro indicado por "r", dejando el resultado en el registro acumulador. (A)<= (A) + operando</p><p><br></p>
+            <p class="text">Instrucción de Resta SUB:<ul class="indt"><p>Resta el primer operando al segundo y almacena el resultado en el primero. resta dos registros y deja el 
+            resultado en el registro destino Rd. Rd = Rd - Rr<p><br></p>
+            <p class="text">Instrucción de multiplicación MUL:<br>Multiplica el contenido del acumulador por el operando, a diferencia de los métodos anteriores, 
+            solo es necesario indicar el valor por el que se multiplicará, ya que el resultado siempre es almacenado en el  registro AX. (A) <= Byte bajo del producto (A) x (B)
+            (B) <= Byte alto del producto (A) x (B)<p><br></p>
+            <p class="text">Instrucción de división DIV:<ul class="indt"><p>Divide un numero contenido en el acumulador entre el operando fuente, el cociente se guarda en AL o AX y 
+            el resto en AH o DX según el operando sea byte o palabra respectivamente. Es necesario que DX o AH sean cero antes de la operación por lo que es necesario utilizar el 
+            ajuste de división antes del la instrucción DIV. (A) <= Cociente de la división entera (A)/(B) y (B) <= Resto de la división entera (A)/(B)</p><p><br></p>
+            <p class="text">Instrucciones logicas<br>Las instrucciones lógicas son un conjunto de instrucciones que se utilizan para realizar operaciones lógicas en 
+            los datos. Estas instrucciones se utilizan principalmente para realizar operaciones booleanas en los datos y para manipular bits individuales en los datos. Algunas de 
+            las instrucciones lógicas más comunes en la arquitectura de computadoras son: AND lógico: Esta instrucción realiza una operación booleana "y" en los bits de dos 
+            operandos y coloca el resultado en un registro de destino.<p><br></p>
+            <p class="text">Instrucciones De Control De Flijo:<ul class="indt"><li>Las instrucciones de control de flujo son las que modifican el secuenciamiento de la 
+            ejecuciónde las instrucciones del programa. En general, el secuenciamiento es implícito, es decir. Todas las instrucciones que modifican el flujo de la ejecución 
+            manejan el contador de programa. También, si la modificación del flujo de instrucciones se hace de forma condicional, esta condición vendrá dada por los bits de estado 
+            (N, Z, V y C). Vemos, por tanto, que para las instrucciones de control de flujo hay dos variables fundamentales: el contador de programa y los bits de condición. 
+            Las instrucciones de control de flujo suponen discontinuidades en la secuencia lineal de ejecución de las instrucciones.</li><p><br></p>
+
+            <h2 id="2.3">2.3 El Ciclo de Instrucciones</h2> <hr>
+            <h4> <i> Ciclos de computadora </i> </h4>
+            <p class="text">El ciclo de la instrucción describe el proceso mediante el cual se ejecutan las instrucciones en una CPU. En términos generales, el ciclo de instrucción 
+            se refiere al proceso de recuperar una instrucción de la memoria, decodificarla y ejecutarla. El ciclo de instrucción consta de varios pasos, que varían según la 
+            arquitectura específica de la CPU.<p><br></p>
+            <p class="text">FETCH (OBTENCIÓN) BUSCAR:<br> La CPU recupera la instrucción de la memoria principal y la guarda en un registro interno llamado "registro de instrucción".
+            </p><p><br></p>
+            <p class="text">DECODE (DECODIFICACIÓN):<br> La CPU interpreta la instrucción, determinando qué operación se debe realizar y qué datos se deben utilizar.</p><p><br></p>
+            <p class="text">EXECUTE (EJECUCIÓN):<br>La CPU lleva a cabo la operación especificada por la instrucción, utilizando los datos que ha recopilado durante los pasos anteriores.
+            </p><p><br></p>
+            <p class="text">STORE (ALMACENAMIENTO):<br>La CPU guarda los resultados de la operación en la memoria principal o en un registro interno.</p><p><br></p> 
+            <p class="text">Después de completar estos cuatro pasos, la CPU vuelve al paso de Fetch y comienza a recuperar la siguiente instrucción de la memoria principal. Este 
+            proceso continúa hasta que se completa la ejecución de un programa.<p><br></p>
+            <p class="text">Es importante destacar que, aunque estos pasos generalmente ocurren en secuencia, la CPU puede ejecutar instrucciones de manera simultánea y superponer 
+            algunos de estos pasos. Esto se debe a la presencia de múltiples unidades funcionales en la CPU, que le permiten realizar múltiples operaciones al mismo tiempo.<p><br></p>
+
+            <h1 id="2.3.1">2.3.1 Ciclo Fetch-Decode-Execute</h1>
+            <p align="center"><img src="https://sites.google.com/site/sistemaslady/_/rsrc/1397043519522/home/multiprocesador/descarga.jpg"></p>
+            <p><br></p>
+ 
+            <h1 id="2.3.2">2.3.2 Segmentación de Instrucciones</h1>
+            <p class="text">La segmentación de las instrucciones (pipeline) consiste en dividir el ciclo de ejecución de las instrucciones en un conjunto de etapas. Estas etapas 
+            pueden coincidir o no con las fases del ciclo de ejecución de las instrucciones.<p><br></p>
+            <p class="text">El objetivo de la segmentación es ejecutar simultáneamente diferentes etapas de distintas instrucciones, lo cual permite aumentar el rendimiento del 
+            procesador sin tener que hacer más rápidas todas las unidades del procesador (ALU, UC, buses, etc.) y sin tener que duplicarlas.<p><br></p>
+            <p class="text">La división de la ejecución de una instrucción en diferentes etapas se debe realizar de tal manera que cada etapa tenga la misma duración, generalmente 
+            un ciclo de reloj. Es necesario añadir registros para almacenar los resultados intermedios entre las diferentes etapas, de modo que la información generada en una 
+            etapa esté disponible para la etapa siguiente.<p><br></p>
+            <p class="text">La segmentación es como una cadena de montaje. En cada etapa de la cadena se lleva a cabo una parte del trabajo total y cuando se acaba el trabajo de una 
+            etapa, el producto pasa a la siguiente y así sucesivamente hasta llegar al final. Si hay N etapas, se puede trabajar sobre N productos al mismo tiempo y, si la
+            cadena está bien equilibrada, saldrá un producto acabado en el tiempo que se tarda en llevar a cabo una de las etapas.<p><br></p>
+            <p class="text">Caracteristicas: <br>La principal característica de la segmentación es que su objetivo de la segmentación es ejecutar simultáneamente diferentes 
+            etapas de distintas instrucciones, lo cual permite aumentar el rendimiento del procesador sin tener que hacer más rápidas todas las unidades del procesador 
+            (ALU, UC, buses, etc).<p><br></p>
+            <p class="text">Funciones:<br>El objetivo de la segmentación es ejecutar simultáneamente diferentes etapas de distintas instrucciones, lo cual permite aumentar el 
+            rendimiento del procesador sin tener que hacer más rápidas todas las unidades del procesador (ALU, UC, buses, etc.) y sin tener que duplicarlas. el funcionamiento de 
+            la segmentación. Presentamos un mismo proceso con instrucciones de tres etapas, en el que cada etapa tarda el mismo tiempo en ejecutarse, resuelto sin segmentación 
+            y con segmentación.<p><br></p>
+
+            <h2 id="2.3.4">2.4 Modos de Direccionamiento</h2> <hr>
+            <p class="text">Una instrucción en ensamblador codifica qué operación se debe realizar, con qué operandos fuente y dónde se debe guardar el resultado. Los operandos 
+            fuente pueden estar:<ul class="indt"><li>En la propia instrucción</li><li>En un registro</li><li>En la memoria principal</li><p><br></p>
+            <p class="text">puesto que el resultado puede almacenarse en un registro o en memoria principal, bastaría con destinar otro conjunto de bits de la instrucción 
+            para codificar:<ul class="indt"><li>El registro en el que debe guardarse el resultado</li><li>La dirección de memoria en la que debe guardarse el resultado</li><p><br></p>
+            <p class="text">El campo de dirección de una instrucción puede especificar una palabra de memoria o un registro procesador. Cuando se da este último caso se dice 
+            que el operando está especificado con direccionamiento directo por registro, o direccionamiento registro por registro, en el caso, el operando reside en uno de los 
+            registros del procesador que es seleccionado por un campo de registro de k bits en la instrucción.<p><br></p>
+            <p class="text">Las ventajas son: <br>El acceso a los registros es muy rápido, por tanto el direccionamiento por registro debe de usarse en las variables que se usen 
+            con más frecuencia para evitar accesos de memoria que son más lentos, un ejemplo muy típico del uso de este direccionamiento don los índices de los bucles. </p><p><br></p>
+            <p class="text">Dirrecionamiento Inmediato<br>El direccionamiento inmediato es una técnica utilizada en arquitectura de computadoras para acceder a datos o instrucciones 
+            en la memoria utilizando valores constantes en lugar de direcciones de memoria (es un número que identifica una ubicación específica en la memoria de un sistema 
+            de computadora). En esta técnica, el valor constante se coloca directamente en el campo de dirección de la instrucción, lo que permite acceder directamente a los datos 
+            o instrucciones necesarias. <p><br></p>
+            </article>
+    </section>
+
+    <footer>
+
+
+</body>
+ </html>
+            
+         
+            
+            
+      
